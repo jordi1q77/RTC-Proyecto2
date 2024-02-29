@@ -60,30 +60,31 @@ animate();
 
 
 const annadirElemento = (ul,element) => {
-
+  const {name, atomic_mass, symbol} = element;
+  const {title:title_img, url: url_img} = element.image;
   const li = document.createElement("li");
   li.classList.add ("element");
   const title = document.createElement("h2");
-  title.textContent = element.name;
+  title.textContent = name;
   title.classList.add("element-name");
   
   const figure = document.createElement("figure");
   const div = document.createElement("div");
   div.classList.add("image-element");
   const img = document.createElement("img");
-  img.src = element.image.url;
-  img.alt = element.title;
+  img.src = url_img;
+  img.alt = title_img;
 
   li.appendChild(title);
   div.appendChild(img);
 
   const span1 = document.createElement("span");
-  span1.textContent = element.symbol;
+  span1.textContent = symbol;
   span1.classList.add("symbol");
   div.appendChild(span1);
   const span2 = document.createElement("span");
   span2.classList.add("atomic-mass");
-  span2.textContent = element.atomic_mass;
+  span2.textContent = atomic_mass;
   div.appendChild(span2);
 
   figure.appendChild(div);
