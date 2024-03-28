@@ -1,0 +1,37 @@
+
+.tabla {
+  display: grid;
+  grid-template-columns: repeat(19, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  align-items: center;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+  width: 90%;
+  margin: auto;
+  margin-top: 100px;
+  max-width: 800px;
+  gap: 2%;
+}
+
+.tabla > li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 100%;
+  border-radius: 10px;
+}
+.tabla-element {
+  color: var(--terciary);
+  /*background-color: black;*/
+  border: 2px solid var(--terciary);
+  padding: 4px;
+  font-size: 16px;
+}
+
+.tabla-selected {
+  box-shadow: 1px 1px 10px var(--terciary);
+  transform: scale(1.1);
+  background-color: aliceblue;
+}

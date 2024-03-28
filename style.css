@@ -22,7 +22,6 @@
 }
 
 body {
-  display: flex;
    background-color:var(--primary);
   background-image: url("https://transparenttextures.com/patterns/light-aluminum.png");
   /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
@@ -59,6 +58,7 @@ h1{
   width: 200px;
 }
 .products{
+  display: none;/*TODO OJO HECHO PARA QUE NO SE VEA*/
   margin-left: 30%;
 }
 .elements {
@@ -113,7 +113,7 @@ h1{
 .symbol, .atomic-mass {
   position: absolute;
   color: var(--terciary);
-  background-color: black;
+  /*background-color: black;*/
   border: 2px solid var(--terciary);
   padding: 4px;
   border-radius: 3px;
